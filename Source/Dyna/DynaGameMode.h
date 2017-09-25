@@ -3,7 +3,8 @@
 #pragma once
 
 #include "DynaGameModeBase.h"
-#include "Controller/DynaController.h"
+#include "DynaController.h"
+#include "DynaGameInstance.h"
 #include "DynaGameMode.generated.h"
 
 /**
@@ -16,6 +17,5 @@ class DYNA_API ADynaGameMode : public ADynaGameModeBase
         ADynaGameMode();
     // custom code
 
-	
 	
 };
