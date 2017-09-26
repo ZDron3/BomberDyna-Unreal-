@@ -21,7 +21,7 @@ b)Game Map
 ## The Player have the ability to Spawn the bombs individually i.e each Character having its own Spawn actor that way the Boosters could be manipulated easily.
 ## The Game consists of a Static level consisting of BreakableWalls and Normal wall.
 ## The Breakable wall consists of 30 booster spawn chace (increased for demo purposes).
-## Game consists of SpeedBooster ,BombCountBooster (not more than 3) ,RangeBooster, Remote Controlled Bomb.
+## Game consists of SpeedBooster(Black) ,BombCountBooster(Pink) (not more than 3) ,RangeBooster(Yellow), Remote Controlled Bomb(White).
 ## Charcter is bomb is linearly interpolated in four directions and the range increases accordingly with range booster.
 ## General bomb count of one i.e can spawn only one bomb after the previous bomb actor has been destroyed.
 ## Pushable bombs with physics.
