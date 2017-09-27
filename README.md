@@ -7,6 +7,8 @@ Initial commit consists of the project where the static map is generated
 with character movement and bomb physics - 2
 Character 1 input : WASD 0_o (SpaceBar)
 Character 2 input : Numpad Directions (Enter Key)
+.exe file can be found at : https://drive.google.com/open?id=0B1JNIBLMCC3ZZ0tWd1lhSGhJVkk
+
 
 Gameplay Details
 ========================================================================================================================
