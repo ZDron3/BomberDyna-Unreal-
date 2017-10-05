@@ -26,30 +26,28 @@ void ADynaController::BeginPlay()
 
 void ADynaController::MoveForward_Backward(float Val)
 {
-    if ((this != NULL) && (Val != 0.0f))
+    if (Val != 0.0f)
     {
         // find out which way is forward
-        Pawn= this->GetPawn();
-        FRotator Mov = Pawn->GetControlRotation();
+        FRotator Mov = this->GetPawn()->GetControlRotation();
         const FVector Direction = FRotationMatrix(Mov).GetScaledAxis(EAxis::X);
         // Limit pitch when walking or falling
-        Pawn->AddMovementInput(Direction, Val);
-        ADynaCharacter1* Rotref = Cast<ADynaCharacter1>(Pawn);
+        this->GetPawn()->AddMovementInput(Direction, Val);
+        ADynaCharacter1* Rotref = Cast<ADynaCharacter1>(this->GetPawn());
         Rotref->SetMeshRotation(Val,0);
          }
 }
 
 void ADynaController::MoveLeft_Right(float Val)
 {
-    if ((this != NULL) && (Val != 0.0f))
+    if (Val != 0.0f)
     {
         // find out which way is forward
-        Pawn = this->GetPawn();
-        FRotator Mov = Pawn->GetControlRotation();
+        FRotator Mov = this->GetPawn()->GetControlRotation();
         const FVector Direction = FRotationMatrix(Mov).GetScaledAxis(EAxis::Y);
         // Limit pitch when walking or falling
-        Pawn->AddMovementInput(Direction, Val);
-        ADynaCharacter1* Rotref = Cast<ADynaCharacter1>(Pawn);
+        this->GetPawn()->AddMovementInput(Direction, Val);
+        ADynaCharacter1* Rotref = Cast<ADynaCharacter1>(this->GetPawn());
         Rotref->SetMeshRotation(0,Val);
     }
 }

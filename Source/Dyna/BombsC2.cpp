@@ -1,11 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Dyna.h"
-#include "BombsC.h"
+#include "BombsC2.h"
 
 
 // Sets default values
-ABombsC::ABombsC()
+ABombsC2::ABombsC2()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -13,21 +13,16 @@ ABombsC::ABombsC()
 }
 
 // Called when the game starts or when spawned
-void ABombsC::BeginPlay()
+void ABombsC2::BeginPlay()
 {
-    Super::BeginPlay();
-
+	Super::BeginPlay();
+	
 }
+
 // Called every frame
-void ABombsC::Tick( float DeltaTime )
+void ABombsC2::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 
 }
-
-void ABombsC::RemoteControl()
-{
-    FTimerHandle FuzeTimerHandle;
-    GetWorld()->GetTimerManager().SetTimer(FuzeTimerHandle, this, &ABombsC::RemoteController, 10, false);
- }
 

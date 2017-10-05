@@ -3,16 +3,16 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
-#include "BombsC.generated.h"
+#include "BombsC2.generated.h"
 
 UCLASS()
-class DYNA_API ABombsC : public AActor
+class DYNA_API ABombsC2 : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-    ABombsC();
+	ABombsC2();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -20,11 +20,6 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-    UFUNCTION(BlueprintCallable, Category ="Remote")
-    void RemoteControl();
-
-    UFUNCTION(BlueprintImplementableEvent)
-        void RemoteController();
 	
 	
 };
